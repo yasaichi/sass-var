@@ -1,0 +1,41 @@
+{
+  "name": "sass-var",
+  "description": "Sass variable generator for Node.js",
+  "author": "Yuichi Goto",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "MIT-LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "main": "./index.js",
+  "homepage": "https://github.com/yasaichi/sass-var",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yasaichi/sass-var.git"
+  },
+  "keywords": [
+    "sass",
+    "variable",
+    "generator"
+  ],
+  "scripts": {
+    "lint": "eslint index.js test.js",
+    "test": "nyc --reporter=lcov --reporter=text-summary mocha test.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.7.0",
+    "isarray": "^2.0.2",
+    "lodash.isplainobject": "^4.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "mocha": "^3.5.0",
+    "nyc": "^11.2.1"
+  }
+}
