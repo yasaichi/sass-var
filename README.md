@@ -1,4 +1,9 @@
 # sass-var
+[![npm version](https://badge.fury.io/js/sass-var.svg)](https://badge.fury.io/js/sass-var)
+[![Build Status](https://travis-ci.org/yasaichi/sass-var.svg?branch=master)](https://travis-ci.org/yasaichi/sass-var)
+[![Code Climate](https://codeclimate.com/github/yasaichi/sass-var/badges/gpa.svg)](https://codeclimate.com/github/yasaichi/sass-var)
+[![Test Coverage](https://codeclimate.com/github/yasaichi/sass-var/badges/coverage.svg)](https://codeclimate.com/github/yasaichi/sass-var/coverage)
+
 sass-var provides a Sass variable generator with Node.js.
 
 ## Installation
