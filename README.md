@@ -15,7 +15,7 @@ npm install sass-var
 ### Basic
 
 ```js
-const SassVar = require('sass-value');
+const SassVar = require('sass-var');
 
 SassVar.generate('string', 'foo');          // '$string:foo;'
 SassVar.generate('boolean', true);          // '$boolean:true;'
@@ -40,7 +40,7 @@ SassVar.generate('object', { bar: 'baz' }); // '$object:(bar:baz);'
 }
 */
 
-const SassVar = require('sass-value');
+const SassVar = require('sass-var');
 const variables = require('./variables.json');
 
 Object.keys(variables)
@@ -64,4 +64,4 @@ You should follow the steps below.
 4. [Send us a pull request](https://help.github.com/articles/about-pull-requests/)
 
 ## License
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The library is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
