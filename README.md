@@ -15,14 +15,14 @@ npm install sass-var
 ### Basic
 
 ```js
-const SassVar = require('sass-var');
+const sassVar = require('sass-var');
 
-SassVar.generate('string', 'foo');          // '$string:foo;'
-SassVar.generate('boolean', true);          // '$boolean:true;'
-SassVar.generate('number', 46);             // '$number:46;'
-SassVar.generate('null', null);             // '$null:null;'
-SassVar.generate('array', [1, 2, 3]);       // '$array:(1,2,3);'
-SassVar.generate('object', { bar: 'baz' }); // '$object:(bar:baz);'
+sassVar.generate('string', 'foo');          // '$string:foo;'
+sassVar.generate('boolean', true);          // '$boolean:true;'
+sassVar.generate('number', 46);             // '$number:46;'
+sassVar.generate('null', null);             // '$null:null;'
+sassVar.generate('array', [1, 2, 3]);       // '$array:(1,2,3);'
+sassVar.generate('object', { bar: 'baz' }); // '$object:(bar:baz);'
 ```
 
 ### Advanced
@@ -40,17 +40,17 @@ SassVar.generate('object', { bar: 'baz' }); // '$object:(bar:baz);'
 }
 */
 
-const SassVar = require('sass-var');
+const sassVar = require('sass-var');
 const variables = require('./variables.json');
 
 Object.keys(variables)
-  .map(key => SassVar.generate(key, variables[key]))
+  .map(key => sassVar.generate(key, variables[key]))
   .join('')
 // '$string:foo;$number:46;$boolean:true;$null:null;$array:(1,2,3);$object:(bar:baz);'
 ```
 
 ## API
-### `SassVar.generate(name, value)`
+### `sassVar.generate(name, value)`
 Returns a Sass variable, which of name is `name` and of value is `value`.
 Throws an error when `undefined` is specified as `value`.
 
