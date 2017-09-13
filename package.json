@@ -8,7 +8,8 @@
     "index.js",
     "MIT-LICENSE",
     "package.json",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "main": "./index.js",
   "homepage": "https://github.com/yasaichi/sass-var",
