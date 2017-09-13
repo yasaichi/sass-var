@@ -1,7 +1,7 @@
 {
   "name": "sass-var",
   "description": "Sass variable generator for Node.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Yuichi Goto",
   "license": "MIT",
   "files": [
