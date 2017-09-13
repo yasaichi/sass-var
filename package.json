@@ -3,32 +3,6 @@
   "description": "Sass variable generator for Node.js",
   "version": "0.1.2",
   "author": "Yuichi Goto",
-  "license": "MIT",
-  "files": [
-    "index.js",
-    "MIT-LICENSE",
-    "package.json",
-    "README.md",
-    "CHANGELOG.md"
-  ],
-  "main": "./index.js",
-  "homepage": "https://github.com/yasaichi/sass-var",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yasaichi/sass-var.git"
-  },
-  "keywords": [
-    "sass",
-    "variable",
-    "generator"
-  ],
-  "scripts": {
-    "lint": "eslint index.js test.js",
-    "test": "nyc --reporter=lcov --reporter=text-summary mocha test.js"
-  },
-  "engines": {
-    "node": ">=4"
-  },
   "dependencies": {
     "isarray": "^2.0.2",
     "lodash.isplainobject": "^4.0.6"
@@ -39,5 +13,31 @@
     "eslint-plugin-import": "^2.7.0",
     "mocha": "^3.5.0",
     "nyc": "^11.2.1"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "index.js",
+    "MIT-LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "homepage": "https://github.com/yasaichi/sass-var",
+  "keywords": [
+    "generator",
+    "sass",
+    "variable"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yasaichi/sass-var.git"
+  },
+  "scripts": {
+    "lint": "eslint index.js test.js",
+    "test": "nyc --reporter=lcov --reporter=text-summary mocha test.js"
   }
 }
