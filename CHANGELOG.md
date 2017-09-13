@@ -1,4 +1,7 @@
 # CHANGELOG
+## [0.1.3](https://github.com/yasaichi/sass-var/releases/tag/v0.1.3) (September 14, 2017)
+Apply [fixpack](https://www.npmjs.com/package/fixpack)
+
 ## [0.1.2](https://github.com/yasaichi/sass-var/releases/tag/v0.1.2) (September 13, 2017)
 Add CHANGELOG.md to the published library
 
