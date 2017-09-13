@@ -1,6 +1,7 @@
 {
   "name": "sass-var",
   "description": "Sass variable generator for Node.js",
+  "version": "0.1.1",
   "author": "Yuichi Goto",
   "license": "MIT",
   "files": [
@@ -37,6 +38,5 @@
     "eslint-plugin-import": "^2.7.0",
     "mocha": "^3.5.0",
     "nyc": "^11.2.1"
-  },
-  "version": "0.1.0"
+  }
 }
