@@ -1,0 +1,6 @@
+linter:
+  eslint:
+    npm_install: true
+    dir:
+      - index.js
+      - test.js
