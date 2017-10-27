@@ -3,7 +3,7 @@ const isPlainObject = require('lodash.isplainobject');
 
 function convertArray(array) {
   const elements = array.map(value => toSassValue(value));
-  return `(${elements.join(',')})`;
+  return `(${elements.join(',')})`
 }
 
 function convertPlainObject(object) {
