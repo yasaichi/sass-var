@@ -1,4 +1,3 @@
-const isArray = require('isarray');
 const isPlainObject = require('lodash.isplainobject');
 
 function convertArray(array) {
@@ -16,7 +15,7 @@ function toSassValue(value) {
     throw new Error("undefined can't be used");
   } else if (value === null) {
     return 'null';
-  } if (isArray(value)) {
+  } if (Array.isArray(value)) {
     return convertArray(value);
   } else if (isPlainObject(value)) {
     return convertPlainObject(value);
