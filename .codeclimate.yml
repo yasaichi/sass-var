@@ -1,6 +1,6 @@
-engines:
+version: "2"
+plugins:
   eslint:
-    enabled: false
-ratings:
-  paths:
-  - "**.js"
+    enabled: true
+    extensions:
+      - .ts
