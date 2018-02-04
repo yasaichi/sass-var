@@ -1,16 +1,16 @@
-const isPlainObject = require('lodash.isplainobject');
+import isPlainObject = require('lodash.isplainobject');
 
-function convertArray(array) {
+function convertArray(array: any[]): string {
   const elements = array.map(value => toSassValue(value));
   return `(${elements.join(',')})`;
 }
 
-function convertPlainObject(object) {
+function convertPlainObject(object: { [key: string]: any }): string {
   const elements = Object.keys(object).map(key => `${key}:${toSassValue(object[key])}`);
   return `(${elements.join(',')})`;
 }
 
-function toSassValue(value) {
+function toSassValue(value: any): string {
   if (typeof value === 'undefined') {
     throw new Error("undefined can't be used");
   } else if (value === null) {
@@ -23,6 +23,6 @@ function toSassValue(value) {
   return value.toString();
 }
 
-exports.generate = function generate(name, val) {
-  return `$${name}:${toSassValue(val)};`;
-};
+export function generate(name: string, value: any): string {
+  return `$${name}:${toSassValue(value)};`;
+}

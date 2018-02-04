@@ -1,0 +1,17 @@
+{
+  "all": true,
+  "exclude": [
+    "coverage",
+    "test.ts"
+  ],
+  "extension": [
+    ".ts"
+  ],
+  "reporter": [
+    "lcov",
+    "text-summary"
+  ],
+  "require": [
+    "ts-node/register"
+  ]
+}

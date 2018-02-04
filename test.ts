@@ -1,7 +1,7 @@
-const assert = require('assert');
-const sassVar = require('.');
+import * as assert from 'assert';
+import * as sassVar from '.';
 
-describe('sassVar.generate(name, value)', () => {
+describe('sassVar.generate(name: string, value: any): string', () => {
   it('should raise when the object includes undefined', () => {
     assert.throws(() => sassVar.generate('var', undefined), "undefined can't be used");
   });
