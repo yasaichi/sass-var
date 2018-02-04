@@ -4,6 +4,7 @@
   "version": "0.1.3",
   "author": "Yuichi Goto",
   "dependencies": {
+    "@types/lodash.isplainobject": "^4.0.3",
     "lodash.isplainobject": "^4.0.6"
   },
   "devDependencies": {
@@ -11,14 +12,18 @@
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",
     "mocha": "^3.5.0",
-    "nyc": "^11.2.1"
+    "npm-run-all": "^4.1.2",
+    "nyc": "^11.2.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.7.1"
   },
   "engines": {
     "node": ">=4"
   },
   "files": [
     "CHANGELOG.md",
-    "index.js",
+    "build",
     "MIT-LICENSE",
     "README.md",
     "package.json"
@@ -30,13 +35,17 @@
     "variable"
   ],
   "license": "MIT",
-  "main": "./index.js",
+  "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/yasaichi/sass-var.git"
   },
   "scripts": {
-    "lint": "eslint index.js test.js",
-    "test": "nyc --reporter=lcov --reporter=text-summary mocha test.js"
-  }
+    "build": "run-s clean build:*",
+    "build:js": "tsc",
+    "clean": "rimraf build",
+    "prepublishOnly": "run-s test build",
+    "test": "nyc mocha test.ts"
+  },
+  "types": "build/index.d.ts"
 }

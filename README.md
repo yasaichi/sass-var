@@ -50,8 +50,8 @@ Object.keys(variables)
 ```
 
 ## API
-### `sassVar.generate(name, value)`
-Returns a Sass variable, which of name is `name` and of value is `value`.
+### `sassVar.generate(name: string, value: any): string`
+Returns a Sass variable, which of name is `name` and of value is `value`.  
 Throws an error when `undefined` is specified as `value`.
 
 ## Contributing
