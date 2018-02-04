@@ -1,4 +1,8 @@
 # CHANGELOG
+## [0.2.0](https://github.com/yasaichi/sass-var/releases/tag/v0.2.0) (February 4, 2018)
+* [Use `Array.isArray()` instead of `isarray`](https://github.com/yasaichi/sass-var/pull/4)
+* [Introduce static types with TypeScript](https://github.com/yasaichi/sass-var/pull/3)
+
 ## [0.1.3](https://github.com/yasaichi/sass-var/releases/tag/v0.1.3) (September 14, 2017)
 Apply [fixpack](https://www.npmjs.com/package/fixpack)
 
