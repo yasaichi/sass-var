@@ -3,7 +3,13 @@ import * as sassVar from '.';
 
 describe('sassVar.generate(name: string, value: any): string', () => {
   it('should raise when the object includes undefined', () => {
-    assert.throws(() => sassVar.generate('var', undefined), "undefined can't be used");
+    assert.throws(
+      () => sassVar.generate('var', undefined),
+      // NOTE: Hack for `TypeError [ERR_AMBIGUOUS_ARGUMENT]` raised in Node v10 or later
+      process.version.match(/^v[0-9]\./)
+        ? "undefined can't be used"
+        : { message: "undefined can't be used" }
+    );
   });
 
   it('should generate a Sass variable, which type of value is null', () => {

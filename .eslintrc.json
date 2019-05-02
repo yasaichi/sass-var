@@ -2,11 +2,10 @@
   "env": {
     "mocha": true
   },
-  "extends": [
-    "airbnb-base"
-  ],
+  "extends": ["airbnb-base"],
   "parser": "typescript-eslint-parser",
   "rules": {
-    "no-undef": "off"
+    "no-undef": "off",
+    "comma-dangle": ["error", "never"]
   }
 }
