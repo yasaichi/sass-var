@@ -15,3 +15,7 @@ before_script:
   - ./cc-test-reporter before-build
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+notifications:
+  email: false
+  slack:
+    secure: 'jVBHBxrQS9TVb/Nh/7038inxyutrXALOesMH+Dx5pVCoDm78cO2c4j2TRqRYMGdlvsLoLquKFH+MCAFjPaSaDTq99AsrCM0M5UC/VECb3pPM6+RDfqn2umGHciS8W5Pa73QsQUUkDm0na7g+ahT5ugRxw0v/2iZli8puhrlw/rs+osH/Y5gK+OvTnh/VABfQvaAQgM3s1/4RYKWP+PMtMSR0uWZXmWrFkxgbsSMJtHYXzbmpubkn39zV0rO4W1k3VhKUlWHyzOjBnUv9kVLG/I/Qom5MtqAfcLDtNqUGdDeb9huBQY0tWKAuK1TXLxZtLdpMin2/x+iYzvBnG40aYePF5tIeD9jHsAkgI7mk4jLCcZZxRr9tLRhDaAfGMMbq7sEQU5D1tK3aa+GBOyyPk+son8hN8RAvI7+LCxmjnb9FSpmYRZEBsNOj4ku2tHRbwa9QSO8GlTbNQ3c3lYx2r/5Xcawh6oAQtW/Mq/RQRp1UILTOisSODQVfeAzFx9mLeywteFqldQSHrU6lD/63WX13zBTUKhrB72Txpn/FdGnzfTxpCCRF2jvv670/h8KhRmEyxNtk2FEdPs8DNdItBeS0Y70iC2TTm0DKQuB3xrtHzeS6J/4qT7Ll7wYvGUlkvItUWqFqXqZInB24fL5lCBoAem7ibIL5SckaTfcKZCI='
